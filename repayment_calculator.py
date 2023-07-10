@@ -4,7 +4,7 @@ import locale
 import numpy as np
 
 def number_to_format(number):
-    locale.setlocale(locale.LC_ALL, 'en_au')
+    locale.setlocale(locale.LC_ALL, 'en_AU.utf8')
     return locale.currency(number, grouping=True)
 
 def format_to_number(format):
